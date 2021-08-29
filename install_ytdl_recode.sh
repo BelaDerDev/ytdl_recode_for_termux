@@ -7,4 +7,4 @@ apt install python ffmpeg
 pip install youtube-dl ffmpeg-python ffmpeg
 mkdir ~/bin
 mkdir ~/storage/shared/Youtube
-cat ~/ytdl_recode_for_termux/ytdl.sh > ~/bin/termux-url-opener
+cat ~/ytdl_recode_for_termux/ytdl_recode.sh > ~/bin/termux-url-opener
