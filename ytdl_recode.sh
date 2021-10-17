@@ -1,6 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
+echo 
 url=$1
-options="144p 240p 360p 480p 720p 1080p 1440p 2160p 4320p beste Audio"
+echo "* = May take too long to Convert!"
+options="144p 240p 360p 480p 720p 1080p 1440p* 2160p* 4320p* beste* Audio"
 select option in $options; do
 	if [ "144p" = $option ]; then
 		clear
@@ -20,18 +22,18 @@ select option in $options; do
 	elif [ "1080p" = $option ]; then
 		clear
 		res=1080
-	elif [ "1440p" = $option ]; then
+	elif [ "1440p*" = $option ]; then
 		clear
 		res=1440
-	elif [ "2160p" = $option ]; then
+	elif [ "2160p*" = $option ]; then
 		clear
 		res=2160
-	elif [ "4320p" = $option ]; then
+	elif [ "4320p*" = $option ]; then
 		clear
 		res=4320
 	elif [ "beste" = $option ]; then
 		clear
-		res="best"
+		res="best*"
 	elif [ "Audio" = $option ]; then
 		clear
 		res="audio"
