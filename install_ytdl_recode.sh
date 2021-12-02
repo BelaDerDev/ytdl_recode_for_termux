@@ -4,7 +4,7 @@ termux-setup-storage
 echo Bitte Enter Drücken
 read
 apt install -y python ffmpeg
-pip install ffmpeg-python ffmpeg
+pip install ffmpeg-python ffmpeg wheel
 python3 -m pip install --no-deps -U yt-dlp
 mkdir ~/bin
 mkdir ~/storage/shared/Youtube
